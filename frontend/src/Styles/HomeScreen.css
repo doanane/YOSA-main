@@ -1,0 +1,322 @@
+body, html {
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0;
+}
+
+.HomeScreen {
+  text-align: center;
+}
+
+.hero {
+  background-image: url('../Assets/FAQimg.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; /* equivalent to object-cover */
+  filter: brightness(95%); /* equivalent to brightness-50 */
+  height: 100vh; /* Maintain full height of the viewport */
+  width: 100%; /* Full width of the container */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+
+.hero-content {
+  max-width: 70%;
+  background: rgba(56, 2, 68, 0.4);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 100px 0;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.hero h1 {
+  font-size: 3vw;
+  animation: fadeIn 3s ease-in-out forwards; 
+}
+
+
+.hero p {
+  margin: 20px 0;
+  font-size: 2vw;
+  animation: fadeIn 3s ease-in-out forwards;
+}
+
+.hero-buttons button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  cursor: pointer;
+}
+
+.hero-buttons button:hover {
+  background: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-content {
+    margin: 50px 0;
+  }
+
+  .hero h1 {
+    font-size: 6vw;
+  }
+
+  .hero p {
+    font-size: vw;
+  }
+
+  .hero-buttons button {
+    padding: 8px 16px;
+  }
+}
+
+.about-us {
+  padding: 20px;
+}
+.content{
+  text-align: left;
+}
+
+.images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-large, .image-small {
+  width: 80%;
+  max-width: 500px;
+  margin: 10px 0;
+}
+
+@media (min-width: 768px) {
+  .images {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .image-large, .image-small {
+    width: 45%;
+  }
+}
+
+
+/* SupportSection.css */
+
+.support-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.images {
+  position: relative;
+  flex-basis: 45%;
+  margin-bottom: 20px;
+}
+
+.image {
+  border: 6px solid #e0f7fa;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: auto;
+}
+
+.image1 {
+  max-width: 80%;
+}
+
+.image2 {
+  max-width: 60%;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  border: 6px solid #e0f7fa;
+}
+
+.content {
+  flex-basis: 45%;
+  max-width: 500px;
+}
+
+.content h2 {
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+
+
+.content h1 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 1em;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.read-more {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.read-more:hover {
+  background-color: #555;
+}
+
+@media (max-width: 768px) {
+  .support-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .images, .content {
+    flex-basis: 100%;
+    right: 20px;
+  }
+
+  .image2 {
+    position: relative;
+    max-width: 50%;
+    top:-70px;
+    left: 100px;
+    margin: 0 auto;
+  }
+}
+
+.charity-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+.charity-content {
+  flex: 1 1 50%;
+  min-width: 300px;
+}
+
+.charity-content h2 {
+  color: var(--secondary);
+}
+
+.charity-content h1 {
+  font-size: 2em;
+  margin: 10px 0;
+}
+
+.charity-content p {
+  margin: 10px 0;
+}
+
+.mission-vision {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.mission, .vision {
+  flex: 1 1 45%;
+  background-color: var(--card);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.mission img, .vision img {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.progress-bars {
+  margin-top: 20px;
+}
+
+.progress-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.progress-bar span {
+  flex: 1;
+}
+
+.bar {
+  flex: 4;
+  background-color: var(--muted);
+  height: 10px;
+  margin: 0 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.fill {
+  background-color: var(--primary);
+  height: 100%;
+}
+
+.charity-image {
+  flex: 1 1 45%;
+  min-width: 300px;
+  position: relative;
+}
+
+.charity-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.image-caption {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: var(--card);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.image-caption ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.image-caption li {
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .charity-content, .charity-image {
+    flex: 1 1 100%;
+  }
+}

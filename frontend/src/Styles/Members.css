@@ -1,0 +1,33 @@
+.team-member-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  
+  .card {
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    color: #000;
+    margin: 10px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .member-image {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  
+  .member-name {
+    font-size: 1.2em;
+    margin: 10px 0 5px;
+  }
+  
+  .member-role {
+    font-size: 0.9em;
+    color: #555;
+  }

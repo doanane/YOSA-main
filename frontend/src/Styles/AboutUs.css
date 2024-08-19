@@ -1,0 +1,536 @@
+/* General Styles */
+.header {
+  position: relative;
+  height: 50vh;
+  background: url('../Assets/aboutuss.png') no-repeat center center/cover;
+  color: white;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.header-text {
+  max-width: 40%;
+  padding: 20px;
+  border-radius: 10px;
+
+ 
+}
+.header-text h1{
+  background: rgba(56, 2, 68, 0.4);
+  font-size: 24px;
+  margin-top: 200px;
+  text-align: center;
+  border-radius: 10px;
+}
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.images {
+  position: relative;
+  margin-right: 20px;
+}
+
+.image-large {
+  width: 400px;
+  height: 400px;
+  border: 5px solid #bdebe0;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-right: 800px;
+  border-radius: 10px;
+}
+
+.image-small {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  bottom: -150px;
+  border-radius: 10px;
+  left: 300px;
+  border: 5px solid #bdebe0;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-content {
+  max-width: 400px;
+  box-sizing: border-box;
+  margin-left: 700px;
+  margin-top: -400px;
+}
+
+.text-content h2 {
+  font-size: 2vw;
+  color: #090909;
+  text-align: left;
+  margin-top: 5px;
+}
+
+.text-content h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.text-content p {
+  font-size: 1.1em;
+  color: #666;
+  line-height: 1.5;}
+
+.about-section,.gallery-section {
+  margin: 100px 0;
+}
+
+.charitySection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  background-color: var(--background);
+  overflow: hidden;
+  color: var(--foreground);
+  margin-top:100px;
+}
+
+.charityContent {
+  flex: 1 1 50%;
+  min-width: 200px;
+  text-align: left;
+  
+}
+
+.charityContent h2 {
+  color: var(--secondary);
+}
+
+.charityContent h1 {
+  font-size: 2em;
+  margin: 10px 0;
+}
+
+.charityContent p {
+  margin: 10px 0;
+}
+
+.missionVision {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.mission,
+.vision {
+  flex: 1 1 45%;
+  background-color: #eaf4f4;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.mission img,
+.vision img {
+  vertical-align: middle;
+  margin-right: 10px;
+  height: 35px;
+  width: 35px;
+}
+
+.progressBars {
+  margin-top: 20px;
+  
+}
+
+.progressBar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.progressBar span {
+  flex: 1;
+}
+
+.bar {
+  flex: 4;
+  background-color: #eaf4f4;
+  height: 10px;
+  margin: 0 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.fill {
+  background-color: green;
+  height: 100%;
+}
+@media (max-width: 768px) {
+  .charityContent,
+  .charityImage {
+    flex: 1 1 100%;
+    font-size: 2.5vw;
+   left: -5px;
+   
+  }
+}
+.about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.about-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+  max-width: 600px;
+  margin-top: 16px;
+  text-align: center;
+}
+
+.mission-section {
+  text-align: center;
+}
+
+.mission-cards {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.mission-card {
+  background: #c7e7df;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 300px;
+}
+
+.about-us-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.image-container {
+  position: relative;
+  max-width: 80%;
+}
+
+.main-image {
+  display: block;
+  width: 80%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  margin-left: 250px;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  left: -30px;
+  height: 200px;
+  border: 7px solid #bdebe0;
+}
+
+.overlay-text {
+  list-style-type: disc;
+  padding-left: 1.2rem;
+  color: #111827;
+  margin: 0;
+}
+
+.features-section {
+  padding: 3rem 1rem;
+  color: #333;
+}
+
+.section-title {
+  text-align: left;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 2rem;
+}
+
+.features-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.feature-card {
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  width: 350px;
+  height: 400px;
+  margin-left: -15 px;
+}
+
+.feature-card-dark {
+  background-color: #eaf4f4;
+  color: black;
+}
+
+.feature-card-light {
+  background-color: #eaf4f4;
+}
+
+.feature-card-light:hover {
+  background-color: #1b2735;
+  color:white;
+}
+
+.icon-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.icon {
+  width: 4rem;
+  height: 4rem;
+}
+
+.feature-card h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.feature-card p {
+  font-size: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.feature-card ul {
+  list-style-type: decimal;
+  padding-left: 1.0rem;
+  margin: 0;
+}
+
+.feature-card li {
+  margin-bottom: 0.5rem;
+}
+
+.gallery-section {
+  text-align: center;
+
+}
+
+.gallery-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.gallery-images img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 1200px) {
+  .main-image {
+    margin-left: 50px;
+ 
+  }
+
+  .text-content {
+
+    margin-top: 30px;
+    text-align: center;
+
+  }
+
+  .mission-section h1,
+  .mission-section h2,
+  .mission-section p,
+  .text-content h1,
+  .text-content h2,
+  .text-content p {
+    text-align: center;
+   
+  }
+.image-large{
+  margin-left: 800px;
+  width: 250px;
+  height: 250px;
+}
+  .image-small {
+    bottom: -100px;
+    margin-left: 200px;
+    width: 150px;
+    height: 150px;
+  }
+}
+
+
+@media (max-width: 992px) {
+  .header {
+    height: 40vh;
+    
+  }
+
+  .text-content h1 {
+    font-size: 2.5em;
+    
+  }
+
+  .text-content h2 {
+    margin-top: 100px;
+    font-size: 2.5em;
+  }
+
+  .text-content p {
+    font-size: 2.5em;
+    
+  }
+}
+
+@media (max-width: 768px) {
+  .features-cards {
+    grid-template-columns: repeat(2, 1fr);
+    margin-left:-15px ;
+  }
+
+  .image-small {
+    bottom: -80px;
+    left: 20px;
+  }
+
+  .text-content h1 {
+    font-size: 1em;
+  }
+
+  .text-content h2 {
+    font-size: 1em;
+  }
+
+  .text-content p {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    height: 30vh;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .logo {
+    height: 30px;
+    align-items: flex-start;
+  }
+
+  .main-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .images {
+    margin-right: 0;
+ 
+  }
+.charityContent{
+  font-size: 0.8em;
+}
+  .text-content {
+    margin-left: 0;
+    margin-top: 20px;
+    text-align: left;
+    padding: 0 20px;
+  }
+
+  .about-section,
+  .mission-section,
+  .donation-section,
+  .features-section,
+  .gallery-section {
+    margin: 80px 0;
+  }
+
+  .features-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .main-image {
+    width: 500px;
+    margin-left: 70px;
+    height: 250px;
+  }
+
+  .overlay {
+    left: -60px;
+    width: 100;
+    text-align: center;
+    height: auto;
+    margin-top: 2x;
+    padding: 1rem 0;
+    font-size: 0.8em;
+  }
+
+  .overlay-text {
+    padding-left: 0;
+  }
+
+  .image-small {
+    width: 150px;
+    bottom: -60px;
+    left: 0;
+  }
+
+  .text-content h1 {
+    font-size: 1.2em;
+  }
+
+  .text-content h2 {
+    font-size: 1em;
+  }
+
+  .text-content p {
+    font-size: 1em;
+  }
+
+  .mission-section h1 {
+    font-size: 1em;
+  }
+
+  .mission-section h2 {
+    font-size: 0.9em;
+  }
+
+  .mission-section p {
+    font-size: 0.8em;
+  }
+}

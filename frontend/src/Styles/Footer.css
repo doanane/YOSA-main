@@ -1,0 +1,77 @@
+/* src/Footer.css */
+.footer {
+    background-color: #222;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin: 20px;
+    min-width: 200px;
+  }
+  
+  .footer-section h3 {
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+    color: #bbb;
+  }
+  
+  .footer-section .yosa-icon {
+    width: 100px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-section.newsletter input[type="email"] {
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .footer-section.newsletter button {
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff0099;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .footer-section.newsletter p {
+    margin-top: 40px;
+    color: #bbb;
+  }
+  
+  .social-icons {
+    margin-top: 20px;
+  }
+  
+  .social-icons i {
+    margin: 0 10px;
+    color: #bbb;
+    cursor: pointer;
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid #444;
+    padding-top: 20px;
+    color: #bbb;
+  }
+  

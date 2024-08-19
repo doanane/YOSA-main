@@ -1,0 +1,132 @@
+.charitySection {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background-color: var(--background);
+    overflow: hidden;
+    color: var(--foreground);
+    margin-top:100px;
+  }
+  
+  .charityContent {
+    flex: 1 1 50%;
+    min-width: 200px;
+    text-align: left;
+    
+  }
+  
+  .charityContent h2 {
+    color: var(--secondary);
+  }
+  
+  .charityContent h1 {
+    font-size: 2em;
+    margin: 10px 0;
+  }
+  
+  .charityContent p {
+    margin: 10px 0;
+  }
+  
+  .missionVision {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .mission,
+  .vision {
+    flex: 1 1 45%;
+    background-color: #eaf4f4;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .mission img,
+  .vision img {
+    vertical-align: middle;
+    margin-right: 10px;
+    height: 35px;
+    width: 35px;
+  }
+  
+  .progressBars {
+    margin-top: 20px;
+    
+  }
+  
+  .progressBar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .progressBar span {
+    flex: 1;
+  }
+  
+  .bar {
+    flex: 4;
+    background-color: #eaf4f4;
+    height: 10px;
+    margin: 0 10px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .fill {
+    background-color: green;
+    height: 100%;
+  }
+  
+  .charityImage {
+    flex: 1 1 45%;
+    min-width: 200px;
+    position: relative;
+    left: 30px;
+  }
+  
+  .charityImage img {
+    width: 60%;
+    border-radius: 10px;
+  }
+  
+  .imageCaption {
+    position: absolute;
+    bottom: 150px;
+    left: 80px;
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .imageCaption ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .imageCaption li {
+    margin-bottom: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .charityContent,
+    .charityImage {
+      flex: 1 1 100%;
+      font-size: 2.5vw;
+     left: -5px;
+     
+    }
+  }
+  @media (max-width: 768px) {
+   .imageCaption {
+      width :200px;
+      height : 150px;
+      margin-bottom: -200px;
+      left: 150px;
+    }
+     .imageCaption ul{
+font-size: 2vw;
+    }
+  }

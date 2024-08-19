@@ -1,0 +1,115 @@
+.registration-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 60px;
+  }
+  
+  @media (min-width: 768px) {
+    .registration-container {
+      flex-direction: row;
+    }
+  }
+  
+  .image-section {
+    flex: 1;
+    position: relative;
+  }
+  
+  .image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
+  
+  .image-caption {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    color: white;
+    font-size: 18px;
+  }
+  
+  .form-section {
+    flex: 1;
+    margin-top: 32px;
+  }
+  
+  @media (min-width: 768px) {
+    .form-section {
+      margin-top: 0;
+      margin-left: 32px;
+    }
+  }
+  
+  .form-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    color: black;
+   
+  }
+  
+  .registration-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-label {
+    font-size: 14px;
+    font-weight: 500;
+    color: gray;
+  }
+  
+  .form-input {
+    margin-top: 4px;
+    padding: 8px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+  
+  .form-input-wrapper {
+    position: relative;
+  }
+  
+  .input-icon {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  
+  .submit-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .button-icon {
+    margin-left: 8px;
+  }
+  
